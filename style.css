@@ -9,6 +9,9 @@ body {
 
 }
 
+h5{
+  cursor: pointer;
+}
 
 header {
   top: 0;
@@ -118,7 +121,9 @@ iframe{
   display: none;
 }
 
-.rmvBtn {
+.rmvbtn {
   margin: 5px 5px;
   border: 10px solid red;
+  position: absolute;
+  cursor: pointer;
 }
