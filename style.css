@@ -117,3 +117,8 @@ iframe{
 .none {
   display: none;
 }
+
+.rmvBtn {
+  margin: 5px 5px;
+  border: 10px solid red;
+}

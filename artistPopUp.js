@@ -13,10 +13,16 @@ artistEl.addEventListener('click', e => {
   var iframe = e.target.nextElementSibling;
   // remove class of none from that iframe
   iframe.classList.remove("none");
-  // create a button that pops up with soundCloud player
-  var rmvBtn = document.createElement('button');
-  rmvBtn.innerHTML = "Close SoundCloud Player";
-  artistEl.parentNode.insertBefore(rmvBtn, artistEl);
+  // create a button within #artist div that pops up with soundCloud player
+    var rmvBtn = document.createElement('button', className="rmvBtn");
+    rmvBtn.innerHTML = "Close SoundCloud Player";
+    // place above player to be visible
+    artistEl.parentNode.insertBefore(rmvBtn, artistEl);
+    // add an event listener to rmvBtn
+      rmvBtn.addEventListener('click', e => {
+        // add back class of none from that iframe
+        iframe.classList.add("none");
+    });
 });
 
 // if soundcloud embed is displayed
