@@ -20,18 +20,13 @@ artistEl.addEventListener('click', e => {
     artistEl.parentNode.insertBefore(rmvBtn, artistEl);
     // add an event listener to rmvBtn
       rmvBtn.addEventListener('click', e => {
+        e.preventDefault();
         // add back class of none from that iframe
         iframe.classList.add("none");
+        // remove rmvBtn button
+        rmvBtn.parentNode.removeChild(rmvBtn);
     });
 });
 
-// if soundcloud embed is displayed
-// if {
-//   iframe.classList.remove("none") === true {
-// // create a button to close soundcloud embed (iframe)
-//     var closeEmbedBtn = document.createElement("button");
-
-//   }
-// }
 
 
