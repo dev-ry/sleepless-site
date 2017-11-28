@@ -35,6 +35,7 @@ for (var i = 0; i < artistArray.length; i++) {
         iframe.classList.add("none");
         // remove rmvBtn button
         rmvBtn.parentNode.removeChild(rmvBtn);
+        iframe.remove('iframe');
     });
   });
 }
