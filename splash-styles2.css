@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 1) ), url("./images/glitch2.jpg");
+  background-size: 60% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: rgba(242, 242, 242);
+}
+
+.logodiv {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+img {
+  border-radius: 100%;
+  margin-right: 230px;
+  opacity: 1;
+  animation: fade 2s linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}

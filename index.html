@@ -5,27 +5,35 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Sleepless Collective</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
 </head>
 <body>
     <header id='myheading'>
-      <img src='./images/logo-blue.jpg' height="80px" width="80px" id="header-logo">
-      <a href="#" class="header-link">artists</a>
-      <a href="#" class="header-link">releases</a>
+      <img src='./images/logo-rainbow.jpg' height="80px" width="80px" id="header-logo">
+      <a href="#" class="header-link"><img src="./images/twitter.svg" height="50px" width="50px"></a>
+      <a href="#" class="header-link"><img src="./images/facebook.svg" height="50px" width="50px"></a>
+      <a href="#" class="header-link"><img src="./images/instagram.svg" height="50px" width="50px"></a>
     </header>
 
-    <div id="topnav">
-      <li><button><a href="#" onclick="return false;" onmousedown="autoScrollTo('artists');">artists</a></button></li>
-      <li><button><a href="#" onclick="return false;" onmousedown="autoScrollTo('releases');">releases</a></button></li>
-    </div>
-
     <section>
+
+      <div id="introduction" class="eachPageDiv">
+        <p>We are a collective of electronic musicians, visual artists, and friends from around the globe.
+        Our styles are diverse, spanning many genres.</p>
+        <li><button class="nav-buttons"><a href="#" onclick="return false;" onmousedown="autoScrollTo('artists');">artists</a></button></li>
+        <li><button class="nav-buttons"><a href="#" onclick="return false;" onmousedown="autoScrollTo('releases');">releases</a></button></li>
+      </div>
+      <div id="topnav">
+        <li><button class="nav-buttons"><a href="#" onclick="return false;" onmousedown="autoScrollTo('artists');">artists</a></button></li>
+        <li><button class="nav-buttons"><a href="#" onclick="return false;" onmousedown="autoScrollTo('releases');">releases</a></button></li>
+      </div>
       <div id="page-1" class="eachPageDiv">
         <a href="#" onclick="return false;" onmousedown="back('myheading');">Go Back</a>
       </div>
 
       <div name="page-2" id="artists" class="eachPageDiv">
         <div class="music-space">
-          <div>
+          <div id="artist-plays">
             <h5 class="name">Richard Alfaro</h5>
             <iframe class="none" width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/322915078&amp;color=%23ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
             <h5 class="name">PBS'73</h5>
@@ -52,8 +60,7 @@
       </div>
 
       <div name="page-3" id="releases" class="eachPageDiv">
-        <iframe style="border: 0; width: 240px; height: 580px;" src="https://bandcamp.com/EmbeddedPlayer/album=2885567421/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://sleeplesscollective.bandcamp.com/album/volume-1">VOLUME 1 from SleeplessCollective</a></iframe>
-        <iframe style="border: 0; width: 240px; height: 580px;" src="https://bandcamp.com/EmbeddedPlayer/album=1346888976/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://sleeplesscollective.bandcamp.com/album/volume-2">VOLUME 2 from SleeplessCollective</a></iframe>
+
         <a href="#" onclick="return false;" onmousedown="back('myheading');">Go Back</a>
       </div>
 

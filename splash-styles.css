@@ -2,15 +2,65 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(222, 222, 222, 0.5) ), url("./images/glitch2.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .logodiv {
-  background-image: linear-gradient( rgba(222, 222, 222, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/glitch2.jpg");
-  background: cover;
-  height: 650px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
+
+}
+
+img {
+  border-radius: 100%;
+  opacity: 1;
+  box-shadow: 0 0 10px 15px white;
+/*  animation: fade 2s linear;
+  animation-iteration-count: infinite;*/
+}
+
+
+/*@keyframes fade {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }*/
+.info {
+
+  animation: noise-3 3s linear infinite;
+
+}
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(2);}
+  43% {opacity: 1; transform: scaleX(3) rotate(10deg);}
 }

@@ -2,10 +2,11 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-image: linear-gradient( rgba(222, 222, 222, 0.5), rgba(0, 0, 0, 0.5) ), url("./images/glitch2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(222, 222, 222, 0.2) ), url("./images/glitch2.jpg");
   /*background: linear-gradient( rgba(220, 222, 226, 0.3), rgba(35, 35, 35, 0.8) ), url('./images/glitch1.jpg');*/
   background-size: cover;
   background-attachment: fixed;
+  font-family: 'Poiret One', cursive;
 
 }
 
@@ -21,29 +22,65 @@ header {
   background-color: black;
   color: white;
   text-align: right;
-  position: fixed;
+  box-shadow: 0 10px 10px 1px black;
+
 }
 
 .header-link {
-  color: white;
-  margin: 10px 20px;
-  float: right;
+  margin: 20px;
+  padding: 2px;
+  border: 2px solid grey;
+  border-radius: 10px;
 }
 
 #header-logo {
-  border-radius: 100%;
+  /*border-radius: 100%;*/
   float: left;
   margin: 10px 20px;
-  box-shadow: 0 0 5px 3px #fffb38;
 }
 
 #topnav {
-  margin-top: 130px;
+  margin: 0 auto;
   text-align: center;
-  height: 100px;
+  width: 90%;
+  height: 200px;
   border: 5px solid red;
   display: flex;
   justify-content: center;
+  align-items: center;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+#introduction {
+  background-image: url("./images/logo-glitch.jpg");
+  margin-top: 60px;
+  height:400px;
+  background-size: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    height: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    height: 100%;
+  }
+}*/
+
+.nav-buttons {
+  margin: 30px;
+  font-size: 50px;
+  height: 60px;
+  font-family: 'Poiret One', cursive;
+  background-color: black;
+  box-shadow: 0 0 5px 5px white;
+  border: 3px solid #3a3a3a;
 }
 
 li {
@@ -54,17 +91,12 @@ li {
 section {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  margin-right: 30px;
-}
-
-#navDiv {
-  margin-top: 150px;
+  align-items: center;
 }
 
 .eachPageDiv {
   height: 550px;
-  width: 65%;
+  width: 90%;
   background-repeat: no-repeat;
   border: 5px solid grey;
   border-radius: 10px;
@@ -79,30 +111,17 @@ section {
 
 #artists {
   background-image: url('./images/airport6.jpg');
+  background-size: cover;
 }
 
 #releases {
   background-color: rgb(48, 46, 46);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 650px;
   margin: 20px;
 }
 
 button {
   line-height: 22px;
-}
-
-.sidebar {
-  float: left;
-  height: 400px;
-  background-color: #424242;
-  padding-right: 20px;
-  position: fixed;
-  top: 150px;
-  margin-left: 20px;
-  box-shadow: 0 0 5px 7px;
 }
 
 li {
@@ -115,6 +134,13 @@ iframe{
   margin: 0 auto;
   width: 80%;
   right: 0;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #383838;
+
 }
 
 .none {
