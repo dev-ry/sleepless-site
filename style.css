@@ -6,7 +6,7 @@ body {
   /*background: linear-gradient( rgba(220, 222, 226, 0.3), rgba(35, 35, 35, 0.8) ), url('./images/glitch1.jpg');*/
   background-size: cover;
   background-attachment: fixed;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Varela Round', sans-serif;
 
 }
 
@@ -24,19 +24,21 @@ header {
   text-align: right;
   box-shadow: 0 10px 10px 1px black;
 
+
 }
 
 .header-link {
-  margin: 20px;
+  margin: 25px 20px 20px 20px;
   padding: 2px;
-  border: 2px solid grey;
   border-radius: 10px;
+  display: inline-block;
 }
 
 #header-logo {
-  /*border-radius: 100%;*/
+  border-radius: 100%;
   float: left;
-  margin: 10px 20px;
+  margin-top: 20px;
+  /*margin: 10px 20px;*/
 }
 
 section {
@@ -58,13 +60,10 @@ section {
 }
 
 #introduction {
-  background-image: url('./images/airport-light.jpg');
-  background: cover;
   width: 90%;
   margin: 60px 0 30px 0;
-  height:400px;
   text-align: center;
-  /*height: 100vh;*/
+  height: 100vh;
 }
 
 #intro-text {
@@ -72,15 +71,17 @@ section {
 }
 
 p {
-  /*background: linear-gradient(rgba(96, 96, 96, 0.5), rgba(237, 237, 237, 1));*/
-  background: rgba(96, 96, 96, 0.8);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('./images/airport-light.jpg');
+  background-size: cover;
   width: 75%;
   font-size: 40px;
   margin: 60px 20px 50px 45px;
   color: white;
-  padding: 10px;
-  border: 4px solid black;
+  padding: 20px;
   text-align: center;
+  box-shadow: 0 0 10px 5px white;
+  border-radius: 10px;
+  /*filter: blur(20px);*/
 }
 
 /*animation-duration: 3s;
@@ -99,18 +100,22 @@ p {
 }*/
 
 .nav-buttons {
+  font-family: 'Varela Round', sans-serif;
+  color: white;
   margin: 30px;
   font-size: 50px;
   height: 60px;
-  font-family: 'Poiret One', cursive;
   background-color: black;
-  box-shadow: 0 0 5px 5px white;
-  border: 3px solid #3a3a3a;
+  background: url('./images/airport-light.jpg');
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px white;
+  /*border: 3px solid #3a3a3a;*/
 }
 
 li {
   display: inline;
   text-align: center;
+  color: white;
 }
 
 .eachPageDiv {
@@ -157,8 +162,7 @@ iframe{
 
 a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #383838;
+  color: white;
 
 }
 
