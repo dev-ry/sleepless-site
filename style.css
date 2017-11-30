@@ -15,9 +15,11 @@ h5{
   font-size: 24px;
   font-weight: 300;
   font-family: 'Varela Round', sans-serif;
-  background-color: white;
+  background-color: rgba(200, 227, 255, 1);
+  border-radius: 10px;
   text-align: center;
-  border: 2px solid black;
+  box-shadow: 0 0 5px 5px white;
+  /*border: 2px solid white;*/
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -32,13 +34,13 @@ header {
   color: white;
   text-align: right;
   box-shadow: 0 10px 10px 1px black;
+  margin-bottom: 10px;
 
 
 }
 
 .header-link {
   margin: 25px 20px 20px 20px;
-  padding: 2px;
   border-radius: 10px;
   display: inline-block;
 }
@@ -69,10 +71,23 @@ section {
 }
 
 #introduction {
-  width: 90%;
-  margin: 60px 0 30px 0;
+  background: url('./images/airport2.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+  margin: 30px 0px 0 30px 0;
   text-align: center;
   min-height: 100vh;
+  box-shadow: 0 5px 15px 5px white;
+}
+
+@media all and ( max-width: 600px ) {
+  #introduction {
+    background: url('./images/logo-full.jpg');
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px white;
+  }
 }
 
 #intro-text {
@@ -80,33 +95,17 @@ section {
 }
 
 p {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('./images/airport-light.jpg');
-  background-size: cover;
+  background-color: #4B74C6;
   width: 75%;
-  font-size: 40px;
-  margin: 60px 20px 50px 45px;
+  font-size: 30px;
+  margin: 210px 20px 50px 45px;
   color: white;
   padding: 20px;
   text-align: center;
   box-shadow: 0 0 10px 5px white;
   border-radius: 10px;
-  /*filter: blur(20px);*/
 }
 
-/*animation-duration: 3s;
-  animation-name: slidein;*/
-
-/*@keyframes slidein {
-  from {
-    margin-bottom: 100%;
-    height: 300%;
-  }
-
-  to {
-    margin-bottom: 0%;
-    height: 100%;
-  }
-}*/
 
 .nav-buttons {
   font-family: 'Varela Round', sans-serif;
@@ -114,11 +113,9 @@ p {
   margin: 30px;
   font-size: 50px;
   height: 60px;
-  background-color: black;
-  background: url('./images/airport-light.jpg');
+  background-color: #4B74C6;
   border-radius: 10px;
   box-shadow: 0 0 5px 2px white;
-  /*border: 3px solid #3a3a3a;*/
 }
 
 li {
@@ -129,7 +126,7 @@ li {
 
 .eachPageDiv {
   min-height: 550px;
-  width: 90%;
+  width: 95%;
   background-repeat: no-repeat;
   border: 5px solid grey;
   border-radius: 10px;
@@ -143,15 +140,13 @@ li {
 }
 
 #artists {
-  background-image: url('./images/logo-glitch.jpg');
-  background-size: cover;
+  background: linear-gradient( 90deg, #4B74C6, rgba(181, 227, 255, 1));
   margin-top: 20px;
 }
 
 #releases {
-  background-color: rgb(48, 46, 46);
+  background: linear-gradient( 90deg, rgba(181, 227, 255, 1), #4B74C6);
   margin: 20px;
-
 }
 
 button {
@@ -173,9 +168,11 @@ iframe{
 a {
   text-decoration: none;
   color: white;
-
 }
 
+.release-iframe {
+
+}
 .none {
   display: none;
 }
@@ -192,8 +189,7 @@ a {
 }
 
 .music-space {
-  /*min-height: 1200px;*/
-  width: 90%;
+  width: 95%;
   background-repeat: no-repeat;
   border: 5px solid grey;
   border-radius: 10px;
@@ -220,13 +216,15 @@ a {
 .release-iframe {
   position: relative;
   margin: 20px;
+  margin-left: 50px;
   display: inline-block;
-}
-
-.go-back-button {
-  color: black;
+  border: 10px solid grey;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 5px white;
 }
 
 .go-back-link {
-  color: black;
+  color: white;
 }
+
+
