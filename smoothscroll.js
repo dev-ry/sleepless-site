@@ -26,9 +26,7 @@
               window.scroll(0, scrollY);
 
         } else {
-
             clearTimeout(animator);
-
             }
 
     //       if(scrollPos > targetPos){
@@ -49,9 +47,7 @@
               window.scroll(0, scrollY);
 
         } else {
-
             clearTimeout(animator);
-
         }
 
 

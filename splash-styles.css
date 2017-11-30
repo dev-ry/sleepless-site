@@ -23,14 +23,8 @@ img {
   border-radius: 100%;
   opacity: 1;
   box-shadow: 0 0 10px 15px white;
-/*  animation: fade 2s linear;
-  animation-iteration-count: infinite;*/
 }
 
-
-/*@keyframes fade {
-  0%,100% { opacity: 0 }
-  50% { opacity: 1 }*/
 .info {
 
   animation: noise-3 3s linear infinite;
