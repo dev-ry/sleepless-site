@@ -14,7 +14,6 @@ body {
   width: 100%;
   background-color: black;
   overflow: hidden;
-
 }
 
 .social_header li {
@@ -44,9 +43,20 @@ body {
           MAIN
 ////////////////////////////////*/
 
+.sidebar {
+  width: 80px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  background-color: red;
+
+}
+
 .main-wrap {
   margin: 0;
   position: relative;
+  padding-left: 80px;
 }
 
 .main {
