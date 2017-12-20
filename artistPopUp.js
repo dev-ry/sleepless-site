@@ -1,5 +1,5 @@
 
-var artistArray = document.querySelectorAll('.name');
+var artistArray = document.querySelectorAll('.name, .artist-pics');
 
 // add event listener to h5 elements
 for (var i = 0; i < artistArray.length; i++) {

@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*/////////////////////////////////////
+              HEADER STUFF
+/////////////////////////////////////*/
+
+header {
+  background-color: black;
+}
+
+#header-logo {
+  height: 100px;
+  filter: brightness(0.5);
+}
+
+.social-links {
+  filter: brightness(0.5);
+  height: 60px;
+  width: 60px;
+  float: right;
+  margin: 20px 0 ;
+}
+
+Artists page:
+    pg. 008 from idea book
