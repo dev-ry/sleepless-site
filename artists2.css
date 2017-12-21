@@ -68,14 +68,45 @@ body {
 }
 
 .artist-plays {
+  position: relative;
   display: inline;
   margin-left: 40px;
-
 }
+
+.overlay {
+  position: absolute;
+  top: -150px;
+  bottom: 20px;
+  left: 70px;
+  right: 0;
+  height: 100px;
+  width: 100px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.artist-plays:hover .overlay {
+  opacity: 1;
+}
+
 .artist-pics {
   height: 200px;
   width: 200px;
   margin: 15px;
   border: 5px solid white;
   box-shadow: 5px 5px 5px #ccc;
+
+}
+
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
