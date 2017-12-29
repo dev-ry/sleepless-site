@@ -17,12 +17,12 @@ var artistsArray = [richardAlfaro, pbs73, tainsus, piWrecks, bvsmv, acTone, midd
 var musicPlaying = false;
 
 function addMusic(event) {
-  document.querySelector('h5').innerHTML = richardAlfaro;
+  document.querySelector('.music').innerHTML = richardAlfaro;
   musicPlaying = true;
 }
 
 function removeMusic(event) {
-  document.querySelector('h5').innerHTML = "Richard Alfaro";
+  document.querySelector('.music').innerHTML = "";
   musicPlaying = false;
 }
 
@@ -30,23 +30,9 @@ function removeMusic(event) {
       musicPlaying ? removeMusic() : addMusic();
     }
 
-document.getElementById('richardAlfaro').onclick = toggleNav;
+document.querySelector('.artist-plays').onclick = toggleNav;
 
-// document.getElementById('richardAlfaro').addEventListener('click', function() {
-//   document.querySelector('h5').innerHTML = richardAlfaro;
-//   musicPlaying = true;
-//   document.querySelector('h5').innerHTML = "Richard Alfaro";
-//   musicPlaying = false;
-//   // musicPlaying ? removeMusic() : addMusic();
-// });
+//////////////////////////////////////////////////////////////////////
 
-// document.getElementById('toggleButton').addEventListener('click', function() {
-  //   if (isOpen) {
-  //     removeMusic();
-  //   } else {
-  //     addMusic();
-  //   }
-  // });
 
-// document.getElementById('addMusic').addEventListener('click', addMusic);
-// document.getElementById('removeMusic').addEventListener('click', removeMusic);
+

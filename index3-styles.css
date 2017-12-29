@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /*background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(222, 222, 222, 0.5) ), url("./images/glitch2.jpg");*/
+  /*background-image: linear-gradient(to right, rgba(30, 116, 255, 0.8), rgba(1, 76, 196, 0.8)), url('./images/airport6-A.jpg');*/
+
+}
+
+.header {
+  background-image: linear-gradient(to right, rgba(30, 116, 255, 0.8), rgba(1, 76, 196, 0.8)), url('./images/airport-light.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.logo-space {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  animation: logoSlideIn;
+  animation-duration: 2s;
+}
+
+@keyframes logoSlideIn {
+  0% {
+    opacity: 0;
+    transform: translate(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.intro {
+  /*position: relative;*/
+  background-color: black;
+  margin: 0 20px 0 20px;
+  /*top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);*/
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
