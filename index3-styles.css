@@ -15,14 +15,16 @@ body {
 
 .logo-space {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .logo {
   animation: logoSlideIn;
   animation-duration: 2s;
+  margin-bottom: 130px;
 }
 
 @keyframes logoSlideIn {
@@ -37,16 +39,24 @@ body {
   }
 }
 
-.intro {
-  /*position: relative;*/
-  background-color: black;
-  margin: 0 20px 0 20px;
-  /*top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
+.artist-button:link,
+.artist-button:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #777;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 40px;
+  transition: all .2s;
 }
 
-h2 {
-  font-family: 'Raleway', sans-serif;
-  color: white;
+.artist-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.artist-button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
