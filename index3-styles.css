@@ -13,7 +13,7 @@ body {
   height: 100vh;
 }
 
-.logo-space {
+.header__logo-space {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -46,7 +46,6 @@ body {
   background-color: #fff;
   color: #777;
   padding: 15px 40px;
-  display: inline-block;
   border-radius: 40px;
   transition: all .2s;
 }
@@ -59,4 +58,23 @@ body {
 .artist-button:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.artist-button {
+  font-family: 'Quicksand', sans-serif;
+  animation: btnSlideUp;
+  animation-duration: 2s;
+  display: inline-block;
+}
+
+@keyframes btnSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
