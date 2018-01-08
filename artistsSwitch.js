@@ -12,9 +12,10 @@ var cesiumSwimsuit = '<iframe width="100%" height="166" scrolling="no" framebord
 
 
 var body = document.querySelector('body');
+var musicPlaying = false;
 
 function addMusic () {
-  var artistPlaying;
+  var artistPlaying = "Richard Alfaro";
   switch (artistPlaying) {
     case richardAlfaro:
       document.getElementById('richardAlfaro').innerHTML = richardAlfaro;
