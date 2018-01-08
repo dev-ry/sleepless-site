@@ -15,7 +15,7 @@ var body = document.querySelector('body');
 var musicPlaying = false;
 
 function addMusic () {
-  var artistPlaying = "Richard Alfaro";
+  var artistPlaying =;
   switch (artistPlaying) {
     case richardAlfaro:
       document.getElementById('richardAlfaro').innerHTML = richardAlfaro;
